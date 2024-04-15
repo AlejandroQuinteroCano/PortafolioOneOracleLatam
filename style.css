@@ -22,30 +22,33 @@ body {
 ol, ul,li {
     list-style: none;
 }
-a{
+{
     text-decoration: none;
     color: var(--cor-de-link);
 }
-
-
-
 .boton{
-  border:none;
-  min-width: 180px;
-  height: 50px;
-  padding: 0 30px;
-  background: black;
-  color:white;
-  display:inline-block;
-  border-radius:100px;
-  text-decoration:none;
-  display:inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  background: blue;
+    border:none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    background: black;
+    color:white;
+    display:inline-block;
+    border-radius:100px;
+    text-decoration:none;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: blue;
+    transition: .3s ease all;
+  }
+
+  .card{
+    
+    font-style:italic
+
+  }
   
-  transition: .3s ease all;
-}
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
