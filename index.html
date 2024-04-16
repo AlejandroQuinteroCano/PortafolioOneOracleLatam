@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title> Mi Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flexboxPortafolio.css">
 </head>
     
         <body>
@@ -31,54 +32,52 @@
                         <p class="card__extracto"> Me llamo Diego Alejandro Quintero Cano, Naci en Andes Antioquia - COLOMBIA. 
                             Tengo 3 hijos, actua,ente estoy estudiando para ser parte de las solcuiones tecnologicas para los 
                             problemas que s epresentan a diario en nuestra sociedad.  </p>
+                            <ul class="title__network">
+                                <!-- Pon los enlaces de tus redes sociales favoritas -->
+                               <li class="title__network__item"><a href="">Github <img src="imgPortafolio/arrow.png"> </a></li>
+                               <li class="title__network__item"><a href="">Linkedin <img src="imgPortafolio/arrow.png"></a></li>
+                               <li class="title__network__item"><a href="">Currículo <img src="imgPortafolio/arrow.png"></a></li>
+                           </ul>  
                            
-                            <a href="#" class="boton boton--absolute boton--verde">
-                                <span class="boton__texto">SOBRE MI</span>
-                                <i class="boton__icono fas fa-arrow-low"></i>
-                                </a>                                        
-                                <a href="#" class="boton">
-                                    <span class="boton__texto">SKILLS</span>
-                                    </a> 
-                                    <a href="#" class="boton">
-                                        <span class="boton__texto">HOBBIES</span>
-                                        </a> <a href="#" class="boton">
-                                            <span> FORMACION</span>
-                                            </a> 
-                                            <a href="#" class="boton">
-                                                <span class="boton__texto"> PROYECTO</span>
-                                                </a> 
-                                                <a href="#" class="boton">
-                                                    <span class="boton__texto"> CONTACTO</span>
-                                                    </a>
+                            
                                           </div>
                     </div>
                     </div>
                     
                 </section>       <!--Mis redes   -->
-                                    </li>
-                                <ul class="title__network">
-                                    <!-- Pon los enlaces de tus redes sociales favoritas -->
-                                   <li class="title__network__item"><a href="">Github <img src="imgPortafolio/arrow.png"> </a></li>
-                                   <li class="title__network__item"><a href="">Linkedin <img src="imgPortafolio/arrow.png"></a></li>
-                                   <li class="title__network__item"><a href="">Currículo <img src="imgPortafolio/arrow.png"></a></li>
-                               </ul>                               
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                <section class="contenedor">
+                <a href="#" class="boton">
+                    <span class="boton__texto">SOBRE MI</span>
+                    <i class="boton__icono fas fa-arrow-low"></i>
+                    </a>                                        
+                    <a href="#" class="boton">
+                        <span class="boton__texto">SKILLS</span>
+                        </a> 
+                        <a href="#" class="boton">
+                            <span class="boton__texto">HOBBIES</span>
+                            </a> <a href="#" class="boton">
+                                <span> FORMACION</span>
+                                </a> 
+                                <a href="#" class="boton">
+                                    <span class="boton__texto"> PROYECTO</span>
+                                    </a> 
+                                    <a href="#" class="boton">
+                                        <span class="boton__texto"> CONTACTO</span>
+                                        </a>
+                                    </section>
                 <!--Sobre yo   -->
                 <section>
                     <div class="contenedor">
                         <h3 class="about__title">Mi Perfil</h3>
                         <p class="about__paragraph"> Soy un estudiante que quiere acorto plazo ser un desarrolador junior con especialidad 
-                            FRONEND por medio dleproyecto ONE ORACLE LATAM   </p>
+                            FRONTEND por medio del proyecto ONE ORACLE LATAM   </p>
                         <!--Mi firma  -->
                         <img src="imgPortafolio/" alt="Mi firma">
 
                     </div>
                 </section>
                  <!-- Sección de Skills -->
-                <section>
+                <section class="contenedor__skills" >
                     <h3 class="skills__title">Skills</h3>
                         <div class="skills__line">
                             <div class="skills__box">
@@ -102,16 +101,17 @@
                 </div>
             </section>
  <!-- Mis hobbies -->
- <section class="hobbies" id="hobbies">
+ <section">
+ <div  class="hobbies__contenedor">
     <h3 class="hobbies__title">Hobbies</h3>
-        <div class="hobbies__line">
-            <div class="hobbies__box">
+        <div class="hobbies__contenedor">
+            <div class="hobbies__contenedor">
                 <ul>
                     <li class="hobbies__img"><img src="imgPortafolio/" alt="Atletismo"></li>
                     <li class="hobbies__name"> Atletismo</li>
                 </ul>
             </div>
-            <div class="hobbies__box">
+            <div class="hobbies__contenedor">
                 <ul>
                     <li class="hobbies__img"><img src="imgPortafolio/" alt="Futbol"></li>
                     <li class="hobbies__name"> Futbol</li>
@@ -124,13 +124,13 @@
                 </ul>
             </div>
 
-            <div class="hobbies__box">
+            <div class="">
                 <ul>
                     <li class="hobbies__img"><img src="imgPortafolio/tv_icon.png" alt=""></li>
                     <li class="hobbies__name">Ver séries y partidos de futbol</li>
                 </ul>
             </div>
-
+        </div>
                 </div>
 </section>
                     <!-- Formacion academica -->
@@ -155,7 +155,7 @@
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="" alt="Citas de masajes">
-            <div class="experience__info"
+            <div class="experience__info">
                 <h2 class="experience__title">Agenda de Masajes</h2>
                 <h3 class="experience__text">Pedir citas para masajes</h3>
                     <div class="experience__description">
@@ -169,7 +169,7 @@
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="" alt="Numero secreto">
-            <div class="experience__info"
+            <div class="experience__info">
                 <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
                 <h3 class="experience__text">Proyecto practica</h3>
                     <div class="experience__description">

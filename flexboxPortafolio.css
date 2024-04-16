@@ -1,0 +1,20 @@
+.contenedor__skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .hobbies__contenedor{
+        display: flex;
+        /*flex-direction: column;
+        flex-wrap: wrap;*/
+        flex-flow: column wrap;
+    }
+    .botton__contenedor{
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: scroll;
+        gap: 15px;
+
+
+    }
