@@ -4,6 +4,8 @@ en las secciones señaladas */
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
 
+@import url("reset.css");
+
    --cor-de-fundo: #d3e2f1;
    --cor-de-link: #000;
 }
@@ -19,7 +21,11 @@ body {
     line-height: 1;
     background-color:beige ;
 }
-
+main{
+    display: flex;
+    flex-direction:column;
+    align-items:end;
+}
 /* BEM BLOQUE ---ELEMENTO---MODIFICADOR */
 .contenedor{
     max-width: 1000px;
@@ -71,6 +77,49 @@ margin-bottom: 20px;
 
     color: #000;
 
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.productos li:hover{
+    border-color:#4aef63;
+}
+
+.productos li:active{
+    border-color:#088c19;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 25px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
 }
 
 ol, ul,li {
