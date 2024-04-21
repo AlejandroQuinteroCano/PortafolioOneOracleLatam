@@ -78,7 +78,6 @@ margin-bottom: 20px;
     color: #000;
 
 }
-
 .productos{
     width: 940px;
     margin: 0 auto;
@@ -129,6 +128,17 @@ a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
+.masaje{
+    width: 120px;
+    float:left;
+    margin: 20px 20px 20px 50px;
+}
+.imagen--Experiencia{
+    width: 100%;
+    position: relative;
+      
+}
+
 .boton{
     border:none;
     min-width: 5%;
